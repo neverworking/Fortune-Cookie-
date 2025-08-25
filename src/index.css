@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass: rgba(255,255,255,0.08);
+  --glass-border: rgba(255,255,255,0.2);
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply font-sans bg-soft text-white;
+}
+
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.03) inset;
+}
+
+.button {
+  @apply px-4 py-2 rounded-2xl border border-white/15 hover:border-white/25 transition;
+  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+}
+
+.cookie-shadow {
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.35));
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.floaty {
+  animation: floaty 3.5s ease-in-out infinite;
+}
