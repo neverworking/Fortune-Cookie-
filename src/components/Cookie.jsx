@@ -90,7 +90,7 @@ export default function Cookie(){
       <div className="max-w-2xl w-full">
         <header className="flex items-center justify-between mb-6">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-            Daily Fortune Cookie
+            Daily Fortune Cookie💓
           </h1>
           <div className="text-sm text-white/80">
             <span className="hidden sm:inline">Unlock time:&nbsp;</span>
@@ -210,10 +210,9 @@ export default function Cookie(){
         </div>
 
         <footer className="mt-6 flex items-center justify-between text-white/70 text-xs">
-          <span>Made with 💙 for you</span>
+          <span>Made only for you Harshita💓</span>
           <div className="flex items-center gap-2">
-            {dev && <button className="button" onClick={resetProgress}>Reset progress (dev)</button>}
-            <a className="button" href="https://vercel.com/new" target="_blank" rel="noreferrer">Deploy</a>
+
           </div>
         </footer>
       </div>
